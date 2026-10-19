@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tasknote"
+version = "0.1.0"
+description = "Keep project notes, decisions, and next steps in a local notebook"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+keywords = ["notes", "projects", "sqlite", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+tasknote = "tasknote:main"
+
+[project.urls]
+Repository = "https://github.com/Jbutler23-ai/tasknote"
+Issues = "https://github.com/Jbutler23-ai/tasknote/issues"
+
+[tool.setuptools]
+py-modules = ["tasknote"]
+packages = []
